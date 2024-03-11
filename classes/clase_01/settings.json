@@ -1,0 +1,37 @@
+{
+    "telemetry.enableTelemetry": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "files.autoSave": "off",
+
+    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.env.windows": {
+        "PYTHONPATH" : "${workspaceFolder};${env:PYTHONPATH}"
+    },
+    "terminal.integrated.env.linux": {
+        "PYTHONPATH" : "${workspaceFolder}:${env:PYTHONPATH}"
+    },
+    "terminal.integrated.env.osx": {
+        "PYTHONPATH" : "${workspaceFolder}:${env:PYTHONPATH}"
+    },
+
+    "files.trimTrailingWhitespace": true,
+    "files.exclude": {
+        "**/__pycache__": true,
+		"**/venv": true
+    },
+
+    "[python]": {
+        "editor.rulers": [79]
+    },
+
+    "jupyter.sendSelectionToInteractiveWindow": true,
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "jupyter.askForKernelRestart": false,
+    "jupyter.magicCommandsAsComments": true,
+    "jupyter.runStartupCommands": [
+        "%load_ext autoreload",
+        "%autoreload 2"
+    ]
+}

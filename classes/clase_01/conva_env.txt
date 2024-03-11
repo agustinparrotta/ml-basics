@@ -1,0 +1,4 @@
+conda create -n ml_env python=3.9
+conda activate ml_env
+conda config --env --add channels conda-forge
+conda install --file requirements.txt
